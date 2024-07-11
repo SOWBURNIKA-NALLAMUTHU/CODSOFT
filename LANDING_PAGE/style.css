@@ -1,0 +1,256 @@
+body {
+    /* background-image: url('https://w7.pngwing.com/pngs/253/685/png-transparent-header-footer-vector-page-vector-graphic-design-background-design.png'); */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: teal;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#home {
+    background-image: url('https://image.slidesdocs.com/responsive-images/background/coffee-culture-illustration-powerpoint-background_e224109f77__960_540.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    color: black;
+    height: 60vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#about {
+    background-color: #fff;
+    background-image: url('https://st4.depositphotos.com/7179646/21934/v/450/depositphotos_219347934-stock-illustration-empty-brown-background-template-mock.jpg');
+    display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+}
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+.about-heading {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+.about-content {
+    flex: 2;
+}
+.about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.about-content li {
+    margin-bottom: 10px;
+}
+
+#menu {
+    background-color: #f4f4f4;
+    background-image: url('data:image/jpeg;base64,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');
+}
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: left;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+}
+
+.menu-item .price {
+    color: teal;
+    font-weight: bold;
+}
+#contact {
+    /* background-image: url('https://i.pinimg.com/564x/51/7d/53/517d534a93f2951cdc23f593f4f652e2.jpg');  */
+    background-image: url('https://wallpapers.com/images/hd/coffee-background-ry5ul29a0j7zl508.jpg');
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: maroon;
+}
+
+/* footer {
+    background-color: rgb(202, 190, 190);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+form button {
+    background-color: #6b4f4f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5a3e3e;
+} */
+footer {
+    background-color: teal; 
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+.follow-us, .subscribe, .legal {
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.subscribe form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe input[type="email"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #fff; /* White border for contrast */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    background-color: #fff; /* White button background */
+    color: #333; /* Dark text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscribe button:hover {
+    background-color: #555; /* Darker background on hover */
+    color: black; /* White text color on hover */
+}
+
+.legal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.legal ul li {
+    margin-bottom: 10px;
+}
+
+.legal ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.legal ul li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    background-color: paleturquoise; /* Darker background for copyright notice */
+    color: #ccc; /* Light text color */
+    padding: 15px 0;
+}
