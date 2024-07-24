@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: indianred; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.content-section {
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+#home {
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin: 20px 0;
+    padding: 300px;
+    display: block; 
+}
+
+#about {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhcxJj4uy1wF5B-Q_ofmSMTP-o90HtRor7w&s');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin: 20px 0;
+    padding: 300px;
+}
+#about h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+#about p {
+    max-width: 800px; 
+    margin: 10px auto; 
+    line-height: 1.6; 
+}
+#skills {
+    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin: 20px 0;
+    padding: 300px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+#skills li:hover {
+    transform: scale(1.05);
+}
+
+#projects {
+    background-image: url('https://marketplace.canva.com/EAFUFiGX5ek/1/0/1600w/canva-colorful-watercolor-floral-linktree-background-qRHfsd-4Nmc.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin: 20px 0;
+    padding: 300px;
+}
+
+#projects .project {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+#projects p {
+    max-width: 800px;
+    margin: 10px auto; 
+    line-height: 1.6; 
+}
+
+#resume {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin: 20px 0;
+    padding: 40px;
+}
+
+footer {
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMjJiYXRjaDUta3VsLTM2XzEuanBn.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.quick-links, .follow-us {
+    margin: 20px 0;
+}
+
+.quick-links ul, .follow-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li, .follow-us ul li {
+    margin: 10px 0;
+}
+
+.quick-links ul li a, .follow-us ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-section:target {
+    display: block;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+section, footer {
+    position: relative;
+    z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    display: flex !important;
+}
